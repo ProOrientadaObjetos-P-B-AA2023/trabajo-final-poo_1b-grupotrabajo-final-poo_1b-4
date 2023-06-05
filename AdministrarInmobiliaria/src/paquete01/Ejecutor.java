@@ -83,8 +83,6 @@ public class Ejecutor {
                                             Scanner lecverif= new Scanner(new File("propietarios.dat"));
                                             while (lecverif.hasNext()){
                                                 String prop[] = lecverif.nextLine().split(";");
-                                                System.out.println(prop[2]);
-                                                System.out.println(idP);
                                                 if (idP.equals(prop[2])){
                                                     casas.format("%s;%s;%s;",prop[0],prop[1],prop[2]);
                                                     info=true;
@@ -173,8 +171,6 @@ public class Ejecutor {
                                             Scanner lecverif2= new Scanner(new File("propietarios.dat"));
                                             while (lecverif2.hasNext()){
                                                 String prop[] = lecverif2.nextLine().split(";");
-                                                System.out.println(prop[2]);
-                                                System.out.println(idP1);
                                                 if (idP1.equals(prop[2])){
                                                     depa.format("%s;%s;%s;",prop[0],prop[1],prop[2]);
                                                     info1=true;
